@@ -17,12 +17,12 @@ Figure 1. Importing pickle into Python and setting up the file name and list of 
 
 The second step is to create two lines that will open files in two different modes. We want to be able to open a file in "write" mode which usually involves adding a "w" at the end of the open string. However, because we will be working in binary, we will need to open the file in "wb" mode with the "b" standing for binary. The second line is similar but will involve putting "rb" at the end of the line to open and read the file in binary mode (Figure 2).
 
-![Figure 2](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig2.PNG "Figure2")  
+![Figure 2](Fig2.PNG "Figure2")  
 Figure 2. Opening the file in binary write mode and binary read mode respectively
 
 "Dumps" and "loads" works with each other in that they pickle and unpickle strings of data as indicated by the "s" at the end of the words (Figure 3). This is a simple process, but these two functions rely on each other. A user will not be able to work with strings that have been pickled like they can with unpickled strings. This data needs to be unpickled first. "Dump" and "load" are very similar in that they involve pickling and unpickling data but the process it done to and from text file outside of python (Figure 4 & 5). 
 
-![Figure 3](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig3.PNG "Figure3")  
+![Figure 3](Fig3.PNG "Figure3")  
 Figure 3. Pickling and unpickling a string of data
 
 ![Figure 4](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig4.PNG "Figure4")  

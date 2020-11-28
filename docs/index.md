@@ -7,12 +7,12 @@ https://github.com/chrissyhend1/IntroToProg-Python-Mod07
 
 ## Introduction
 Pickling is a way to convert data to and from binary objects to make the data "sterile". This data is not entirely secure, however, and should not be treated as such, but it does make the data more difficult to read using the naked eye. This process also makes files smaller therefor making them easier to transfer over a network or store in memory. This pickling process is unique to Python and cannot be used with other programming languages.  
-Errors are an expected issue when running any kind of code in Python. Error handling can be used to present custom messages when certain errors are encountered and give a user a more descriptive and more simplified reason why the code failed. Multiple "try-except" blocks can be used to catch multiple different errors and present different messages to the users. 
+Errors are an expected issue when running any kind of code in Python. Error handling can be used to present custom messages when certain errors are encountered and give a user a more descriptive and more simplified reason why the code failed. Multiple "try-except" blocks can be used to catch multiple different errors and present different messages to the users.
 
 ## Pickling in Python  
 There are four main ways to pickle and unpickle data including "dump", "dumps", "load", and "loads". In this example, we will first need to import the pickle program, set up a file name, and set up a new line of dictionary data to work with (Figure 1).
 
-![Figure 1](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig1.PNG "Figure1")  
+![Figure 1](Fig1.PNG "Figure1")  
 Figure 1. Importing pickle into Python and setting up the file name and list of dictionary data.
 
 The second step is to create two lines that will open files in two different modes. We want to be able to open a file in "write" mode which usually involves adding a "w" at the end of the open string. However, because we will be working in binary, we will need to open the file in "wb" mode with the "b" standing for binary. The second line is similar but will involve putting "rb" at the end of the line to open and read the file in binary mode (Figure 2).

@@ -25,79 +25,79 @@ Figure 2. Opening the file in binary write mode and binary read mode respectivel
 ![Figure 3](Fig3.PNG "Figure3")  
 Figure 3. Pickling and unpickling a string of data
 
-![Figure 4](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig4.PNG "Figure4")  
+![Figure 4](Fig4.PNG "Figure4")  
 Figure 4. Pickling data and saving it to a file in "wb"mode  
 
-![Figure 5](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig5.PNG "Figure5")  
+![Figure 5](Fig5.PNG "Figure5")  
 Figure 5. Unpickling data from a file where the file is in "rb" mode
 
 As you can see from the text file, the code successfully pickled the data into a text file (Figure 6).
 
-![Figure 6](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig6.PNG "Figure6")  
+![Figure 6](Fig6.PNG "Figure6")  
 Figure 6. The pickled text file
 
 The code successfully ran in Windows command shell because it pickled and unpickled that data without any errors and stopped at the input step I programmed in (Figure 7).
 
-![Figure 7](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig7.PNG "Figure7")  
+![Figure 7](Fig7.PNG "Figure7")  
 Figure 7. Code successfully ran in Windows command shell
 
 ## Error Handling in Python
 Error handling is a very useful technique in Python to help users better understand why the error is occuring and simplifying the messaging presented to the user. This is done in what is called a "try-except" block. The program will "try" the code, and if the program encounters an error, then the program will cycle through the "except" portion of the code. In this exercise, I explore several different errors that are built into Python as well as how to create a custom error.
 The first error we will be looking at is the ZeroDivisionError. This is a built in error that occurs when a number is attempting to be divided by 0. For example, we will "try" to set "x" to be equal to 10 divided by 0 (Figure 8).
 
-![Figure 8](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig8.PNG "Figure8")  
+![Figure 8](Fig8.PNG "Figure8")  
 Figure 8. Setting up "x" to equal 10 divided by 0 in the try portion of the program
 
 After this is tried by the program, the program will hit an error and therefor run through the except portion. When it hits the correct except portion (which in this case is for the ZeroDivisionError), the program will run through the code displayed in Figure 9. First, the program will save the error as the variable "e". Then the program will print the custom message that zero cannot be the denominator and then follow this up with the built-in Python error information that had been saved as "e". The third print line will print the Python error, the documentation for said error, the type of the error, and separate these each by a new line (Figure 10 & 11).
 
 
-![Figure 9](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig9.PNG "Figure9")  
+![Figure 9](Fig9.PNG "Figure9")  
 Figure 9. The except code block for the error ZeroDivisionError
 
-![Figure 10](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig10.PNG "Figure10")  
+![Figure 10](Fig10.PNG "Figure10")  
 Figure 10. The output in PyCharm IDE from the program after a ZeroDivisionError has occured
 
-![Figure 11](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig11.PNG "Figure11")  
+![Figure 11](Fig11.PNG "Figure11")  
 Figure 11. The error message as seen in the Windows command shell
 
 The second error I have set up is a custom error. As long as the error is set up as an exception before running the "try-except" block, the program will be able to run this custom error (Figure 12).
 
-![Figure 12](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig12.PNG "Figure12")  
+![Figure 12](Fig12.PNG "Figure12")  
 Figure 12. The class code block used to define the custom "BigNumber" error
 
 This custom error is set up to run if x is greater than 10. To do this, I made it so when x was created, it would equal 20 and therefor trigger the error. Python would not normally hit an error for this process, so I needed to add a line that would "raise" the exception if this certain requirement was met. Additionally, this piece needs to be in the "try" portion of the block or else it will not error out (Figure 13).
 
-![Figure 13](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig13.PNG "Figure13")  
+![Figure 13](Fig13.PNG "Figure13")  
 Figure 13. The try portion of the program that will raise the BigNumber error if x is greater than 10
 
 When the exception "BigNumber" is triggered, the "try-except" block will stop at the "except BigNumber" line, store the error as "e", and print out the error that was defined in the custom exception creation earlier (Figure 9). When printing out the "doc" amd "type" as done for the previous error, Python will only print what I defined in the description of the error myself (Figure 14 & 15).
 
-![Figure 14](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig14.PNG "Figure14")  
+![Figure 14](Fig14.PNG "Figure14")  
 Figure 14. The except code block for the BigNumber error
 
-![Figure 15](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig15.PNG "Figure15")  
+![Figure 15](Fig15.PNG "Figure15")  
 Figure 15. The output in PyCharm IDE from the program after the custom error BigNumber has occured
 
 The next error we will explore is an all encompassing error. If an error occurs in the "try" portion and does not fall into any of the other exceptions, this error will be thrown. I have fixed the previous statements to not cause errors before reaching this line as well. In this case, I told the program to try to convert the letter "a" to an integer which is not possible (Figure 16). Since this error does not fit the other three errors that I defined, it called the last one on the list. The except block will print that the error is non-specific and then proceed to print out the built-in error information (Figure 17 & 18).
 
-![Figure 16](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig16.PNG "Figure16")  
+![Figure 16](Fig16.PNG "Figure16")  
 Figure 16. The try portion of the code that will cause an error if "a" is converted to an integer
 
-![Figure 17](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig17.PNG "Figure17")  
+![Figure 17](Fig17.PNG "Figure17")  
 Figure 17. The except code block for the non-specific error
 
-![Figure 18](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig18.PNG "Figure18")  
+![Figure 18](Fig18.PNG "Figure18")  
 Figure 18. The output in PyCharm IDE from the program after a ValueError has occured
 
 The final error that I will demonstrate is the "FileNotFoundError" error. This error will be thrown if a file is opened in the program, but it does not exist. In this example, I told the program to open a file that does not exist (Figure 19). If this error is raised, the program will print the message that the file must exist before running the script and then proceed to print out the built in Python error information (Figure 20 & 21).
 
-![Figure 19](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig19.PNG "Figure19")  
+![Figure 19](Fig19.PNG "Figure19")  
 Figure 19. The try portion of the code that will raise a FileNotFoundError if there is an attempt to open a nonexistent file
 
-![Figure 20](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig20.PNG "Figure20")  
+![Figure 20](Fig20.PNG "Figure20")  
 Figure 20. The except code block for the FileNotFoundError
 
-![Figure 21](https://github.com/chrissyhend1/IntroToProg-Python-Mod07/blob/main/docs/Fig21.PNG "Figure21")  
+![Figure 21](Fig21.PNG "Figure21")  
 Figure 21. The output in PyCharm IDE from the program after a FileNotFound has occured  
 
 ## Summary  

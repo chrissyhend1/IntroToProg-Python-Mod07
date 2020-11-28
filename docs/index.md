@@ -3,13 +3,13 @@ November 27, 2020
 IT FDN 110 A Au 20: Foundations Of Programming: Python  
 Assignment 07  
 https://github.com/chrissyhend1/IntroToProg-Python-Mod07  
-Demonstrating Pickling and Error Handling  
+# Demonstrating Pickling and Error Handling  
 
 ## Introduction
 Pickling is a way to convert data to and from binary objects to make the data "sterile". This data is not entirely secure, however, and should not be treated as such, but it does make the data more difficult to read using the naked eye. This process also makes files smaller therefor making them easier to transfer over a network or store in memory. This pickling process is unique to Python and cannot be used with other programming languages.  
 Errors are an expected issue when running any kind of code in Python. Error handling can be used to present custom messages when certain errors are encountered and give a user a more descriptive and more simplified reason why the code failed. Multiple "try-except" blocks can be used to catch multiple different errors and present different messages to the users. 
 
-##Pickling in Python  
+## Pickling in Python  
 There are four main ways to pickle and unpickle data including "dump", "dumps", "load", and "loads". In this example, we will first need to import the pickle program, set up a file name, and set up a new line of dictionary data to work with (Figure 1).
 
  
@@ -39,7 +39,7 @@ The code successfully ran in Windows command shell because it pickled and unpick
  
 Figure 7. Code successfully ran in Windows command shell
 
-##Error Handling in Python
+## Error Handling in Python
 Error handling is a very useful technique in Python to help users better understand why the error is occuring and simplifying the messaging presented to the user. This is done in what is called a "try-except" block. The program will "try" the code, and if the program encounters an error, then the program will cycle through the "except" portion of the code. In this exercise, I explore several different errors that are built into Python as well as how to create a custom error.
 The first error we will be looking at is the ZeroDivisionError. This is a built in error that occurs when a number is attempting to be divided by 0. For example, we will "try" to set "x" to be equal to 10 divided by 0 (Figure 8).
 
@@ -91,5 +91,5 @@ Figure 20. The except code block for the FileNotFoundError
  
 Figure 21. The output in PyCharm IDE from the program after a FileNotFound has occured  
 
-##Summary  
+## Summary  
 Pickling can be a great method for adding a little data security to your data and also saving some space in either memory or in transfering data over a network. Additionally error handling can be an amazing tool for simplifying built-in Python errors and presenting them to users or creating your own error messages if certain specific guidelines need to be followed.

@@ -5,7 +5,7 @@ Assignment 07
 https://github.com/chrissyhend1/IntroToProg-Python-Mod07  
 Demonstrating Pickling and Error Handling  
 
-##Introduction
+## Introduction
 Pickling is a way to convert data to and from binary objects to make the data "sterile". This data is not entirely secure, however, and should not be treated as such, but it does make the data more difficult to read using the naked eye. This process also makes files smaller therefor making them easier to transfer over a network or store in memory. This pickling process is unique to Python and cannot be used with other programming languages.  
 Errors are an expected issue when running any kind of code in Python. Error handling can be used to present custom messages when certain errors are encountered and give a user a more descriptive and more simplified reason why the code failed. Multiple "try-except" blocks can be used to catch multiple different errors and present different messages to the users. 
 

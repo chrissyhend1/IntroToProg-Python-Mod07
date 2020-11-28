@@ -1,4 +1,4 @@
-Chrissy Henderson
+Chrissy Henderson  
 November 27, 2020
 IT FDN 110 A Au 20: Foundations Of Programming: Python
 Assignment 07
